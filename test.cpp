@@ -6,12 +6,20 @@
 
 
 const char PATH = 'p';
-const int FIXED = 'f';
+const char FIXED = 'f';
+const char REGEX = 'x';
+const char KEY ='k';
 
-const int RANDOM = 'r';
-const int KEY ='k';
+struct list_head{
+     struct list_head *next,*prev;
+}
+struct hlist_node{
+    struct hlist_node *next , **pprev ;
+}
 
-
+struct hlist_head{
+    struct hlist_node *first;
+}
 int main(int argc,char * argv[]){ 
 
     int count=0;
@@ -39,8 +47,6 @@ int main(int argc,char * argv[]){
             switch(param.at(1)){
                 case PATH:
                     ofs.open(argv[i+1],std::ios::app);
-                break;
-                case RANDOM:
                 break;
                 case KEY:
                     char * ptr;
