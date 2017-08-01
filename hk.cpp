@@ -13,12 +13,10 @@ list_head CreateList(int);
 void josephus(list_head,int,int,int);
 int InitList(list_head);
 int main(int argc,char * argv[]){ 
-    list_head h = CreateList(5);
-    list_node * ptr=h;
-    do{
-        std::cout<<ptr->x<<std::endl;
-        ptr = ptr->next;
-    }while(ptr!=h);
+    char tmp1 = 84;
+    char tmp2 = 46;
+    std::cout<<"tmp1----="<<tmp1<<std::endl;
+    std::cout<<"tmp2----="<<tmp2<<std::endl;
     return 0;
 }
 list_head CreateList(int n){
