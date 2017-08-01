@@ -293,7 +293,7 @@ bool init_list(struct list_regx_node *head)
     }
     else
     {
-        std::cout << "init_list() successfully!!!" << std::endl;
+        std::cout << "init_list successfully!!!" << std::endl;
         return true;
     }
 }
@@ -420,7 +420,7 @@ bool regex_handler(std::vector<std::string> vec, struct list_regx_node **head)
             return false;
         }
     }
-    std::cout << "regex_handler() is OK!!!" << std::endl;
+    std::cout << "regex_handler is OK!!!" << std::endl;
     return true;
 }
 /*
@@ -457,7 +457,7 @@ bool regex_exp_checker(std::vector<std::string> regx_vec)
             return false;
         }
     }
-    std::cout << "regex_exp_checker() is ok!!!" << std::endl;
+    std::cout << "regex_exp_checker is ok!!!" << std::endl;
     return true;
 }
 
@@ -477,6 +477,6 @@ bool all_exp_checker(std::vector<std::string> vec, std::ofstream &ofs)
     {
         return false;
     }
-    std::cout << "all_exp_checker() is OK!!!" << std::endl;
+    std::cout << "all_exp_checker is OK!!!" << std::endl;
     return true;
 }
